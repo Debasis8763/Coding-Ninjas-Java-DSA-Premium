@@ -1,4 +1,4 @@
-Given a graph with N vertices (numbered from 0 to N-1) and M undirected edges, then count the distinct 3-cycles in the graph. A 3-cycle PQR is a cycle in which (P,Q), (Q,R) and (R,P) are connected by an edge.
+/*Given a graph with N vertices (numbered from 0 to N-1) and M undirected edges, then count the distinct 3-cycles in the graph. A 3-cycle PQR is a cycle in which (P,Q), (Q,R) and (R,P) are connected by an edge.
 Input Format :
 The first line of input contains two space separated integers, that denotes the value of N and M.
 Each of the following M lines contain two integers, that denote the vertices which have an undirected edge between them. Let us denote the two vertices with the symbol u and v. 
@@ -17,7 +17,8 @@ Sample Input 1:
 2 0
 Sample Output 1:
 1
-Solution: /////////////////////////////////
+Solution: ////////////////////////////////*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -44,7 +45,8 @@ public class Solution {
                 }
             }
         }
-        return count/6; //here we are doing count/6, because we are not using visited array, 
+        return count/6; 
+        //here we are doing count/6, because we are not using visited array, 
         //so 1 cycle is counted 2 times for each of the three vertices, one in clockwise one in anti clockwise
 
     }
